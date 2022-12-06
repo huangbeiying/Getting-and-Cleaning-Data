@@ -1,17 +1,23 @@
-Source Data:
-Data and relative description can be found at:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+#Author: Garnix
+#date:2022_12_05
+#project discraption: 
+1.Download data from the link.
+2.Execute the R script.
 
-Data Set Information:
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+#Source Data:
+Data and relative description can be found at:
+1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+#Function of R script:
+File with R code "run_analysis.R" performs the 6 following steps
+1. Load Packages and get the Data.
+2. Load activity labels and features.
+3. Load train datasets.
+4. Load test datasets.
+5. merge datasets.
+6. Convert classLabels to activityName.
 
-Attribute Information:
-For each record in the dataset it is provided:
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope.
-- A 561-feature vector with time and frequency domain variables.
-- Its activity label.
-- An identifier of the subject who carried out the experiment.
-
+#Variables:
+"activityLabels" contain the data from the downloaded files.
 
